@@ -5,117 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bio Link</title>
   <style>
-    /* Reset Default */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+   /* Reset Default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    /* Body */
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #2c3e50, #4b79a1);
-      background-attachment: fixed;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      overflow: hidden;
-    }
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #3a3d40, #484c51);
+  background-attachment: fixed;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
 
-    /* Container */
-    .container {
-      text-align: center;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      width: 90%;
-      max-width: 360px;
-    }
+/* Container */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 90%;
+  max-width: 380px;
+}
 
-    /* Gambar Profil */
-    .profile-picture {
-      width: 85px;
-      height: 85px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-      border: 4px solid #4b79a1;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    }
+/* Gambar Profil */
+.profile-picture {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #6c757d;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
 
-    /* Bio */
-    .bio {
-      margin: 8px 0 15px;
-      padding: 10px 15px;
-      background-color: rgba(255, 255, 255, 0.3);
-      border-radius: 10px;
-      color: #ddd;
-      font-size: 0.95rem;
-      font-weight: 300;
-      max-width: 320px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+/* Bio */
+.bio {
+  margin: 10px 0 20px;
+  padding: 12px 18px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  color: #d6d6d6;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
 
-    /* Tombol Modern */
-    .links a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      color: #fff;
-      background: linear-gradient(145deg, #1e3c72, #2a5298); /* Warna gradien modern */
-      padding: 12px 25px; /* Ukuran tombol lebih ramping */
-      margin: 8px 0;
-      border-radius: 30px; /* Sudut tombol lebih melengkung */
-      font-size: 1rem;
-      font-weight: 600;
-      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-      max-width: 240px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+/* Tombol Modern */
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(145deg, #5a5d60, #7a7d81); /* Warna gradien lembut */
+  padding: 12px 30px;
+  margin: 10px 0;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    .links a:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      background: linear-gradient(145deg, #2a5298, #1e3c72); /* Warna gradien terbalik saat hover */
-    }
+.links a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(145deg, #7a7d81, #5a5d60); /* Gradien terbalik */
+}
 
-    .links a:active {
-      transform: translateY(2px);
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+.links a:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
 
-    .links a img {
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-    }
+.links a img {
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+}
 
-    /* Footer */
-    .footer {
-      margin-top: 18px;
-      font-size: 0.85rem;
-      color: #bbb;
-    }
+/* Footer */
+.footer {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #bfbfbf;
+}
 
-    .footer a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
-    .footer a:hover {
-      color: #4b79a1;
-    }
+.footer a:hover {
+  color: #7a7d81;
+}
   </style>
 </head>
 <body>
